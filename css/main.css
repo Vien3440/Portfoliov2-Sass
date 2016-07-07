@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
   font-family: "yeti";
   src: url("BananaYeti-ExtraboldTrial.ttf"); }
 @font-face {
@@ -167,30 +167,6 @@ margin-left: 27px }
   -webkit-transform: rotate(90deg);
 	        transform: rotate(90deg);
 }
-
-/*______________________Header________________________*/
-#fond1 {
-  background-color: #00CA63;
-
-  /********Couleur fond haute de page**********/
-  height: 660px;
-  /********Hauteur cadre page de garde**********/
-
-  }
-
-.titre {
-  font-family: "yeti";
-  color: #006733;
-  font-size: 60px;
-  text-align: center;
-  margin-top: 25px;
-  /********Position Titre**********/ }
-
-#contaireImg {
-  /******conteneurLogo****/
-  text-align: center;
-  padding-top: 120px; }
-
 /*______________________Section 1 Qui je suis / Loisir__________________________*/
 .titre1P1 {
   padding-top: 20px;

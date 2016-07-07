@@ -1,0 +1,16 @@
+/*______________________Header________________________*/
+  #fond1 {
+    background-color: #00CA63; /********Couleur fond haute de page**********/
+    height: 660px; /********Hauteur cadre page de garde****** Mettre ecouteur pour dimention ecrant****/
+    div{
+      text-align: center;
+      padding-top: 120px;
+    }
+    h1{
+      font-family: "yeti";
+      color: #006733;
+      font-size: 60px;
+      text-align: center;
+      margin-top: 25px; /********Position Titre**********/
+    }
+  }
