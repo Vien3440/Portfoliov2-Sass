@@ -33,7 +33,7 @@ $('form').submit(function() {
   var formError = false;
 
   form.find('.input').each(function() {
-    if ($(this).val() == '') {
+    if ($(this).val() === '') {
       $(this).addClass('form-error');
       $(this).select();
       formError = true;
@@ -66,11 +66,11 @@ function isValidEmail(email) {
 /*******Barnav*****/
 
 
-$(window).scroll(function(e){  /****Fonction ecoute le scroll***/
+$(window).scroll(function(){  /****Fonction ecoute le scroll***/
   var scrollTop = $(this).scrollTop();
 
     if($(window).scrollTop() > 10){ /****Nombre de pixcel pour condition ok***/
-      console.log(scrollTop)
+    
           $('.navbar').addClass("opaque");/******Aplique l'opasité****/
   }
   else{$('.navbar').removeClass("opaque");}

@@ -28,14 +28,13 @@
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
   .navbar button {
+    width: 51px;
     position: relative;
-    padding: 0px;
-    bottom: 2px;
-    width: 10px;
-    right: 28px;
-    margin-left: 27px; }
+    background-color: #00ca63;
+    border-right: 5px solid #248D37;
+    border-bottom: 5px solid #248D37; }
   .navbar footer {
-    width: 300px;
+    width: 250px;
     padding-top: 2px;
     display: flex;
     justify-content: space-around; }
@@ -76,7 +75,8 @@
   height: 43px; }
 
 .navbar-nav > li > a {
-  padding-top: 10px;
+  font-size: 40px;
+  padding-top: 17px;
   padding-bottom: 10px;
   line-height: 20px;
   text-align: center; }
@@ -86,65 +86,68 @@
 @media (min-width: 768px) {
   .logo {
     margin-left: 64%;
-    margin-top: -39px;
+    margin-top: -47px;
     width: 270px; } }
-/*
-  menu icon css3
-*/
-.menu-icon {
-  position: relative;
-  top: 2px;
-  display: block;
-  width: 50px;
-  height: 15px;
-  cursor: pointer;
-  /* to center */
-  margin: 0 auto;
-  float: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+/*______________________Section 1 Qui je suis / Loisir__________________________*/
+#Section1 {
+  /*******Bloc Section1 Qui je suis *****/
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  background-color: #F05924;
+  color: white; }
+  #Section1 header {
+    padding-top: 20px;
+    font-family: "yeti";
+    font-size: 60px;
+    margin-left: 50px; }
 
-.menu-icon > span {
-  position: absolute;
-  top: 66%;
-  display: block;
-  width: 99%;
-  height: 5px;
-  margin-top: -0.5em;
-  background-color: #e74c3c;
-  border-radius: 3px; }
+.section1P1 {
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-top: 60px;
+  display: flex;
+  font-family: "Basse";
+  font-size: 25px; }
 
-.menu-icon > span:before,
-.menu-icon > span:after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: #e74c3c;
-  border-radius: 3px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+#Section1 + img {
+  /******Image Ordinateur*****/
+  background: #00CA63;
+  padding: 3%;
+  margin-bottom: 2%;
+  border: 20px solid white; }
 
-.menu-icon > span:before {
-  -webkit-transform: translateY(-1em);
-  transform: translateY(-1em); }
+#loisir {
+  margin-left: 45px;
+  font-family: "yeti";
+  font-size: 25px;
+  margin-top: 10%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  visibility: hidden; }
 
-.menu-icon > span:after {
-  -webkit-transform: translateY(1em);
-  transform: translateY(1em); }
+#loisir > header {
+  font-size: 40px; }
 
-/* OPENED */
-.menu-icon.open {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
+.contenLoisir {
+  display: flex;
+  text-align: center; }
 
-.menu-icon.open > span:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
+@media (max-width: 640px) {
+  .contenLoisir {
+    display: none; }
 
-.menu-icon.open > span:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
+  #loisir {
+    background: url("image/loisir_responsive.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    margin-left: 0; } }
+.blocLoisir {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-left: 10px; }
 
 /*# sourceMappingURL=main2.css.map */
